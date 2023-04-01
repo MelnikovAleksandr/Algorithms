@@ -7,8 +7,7 @@ class CommonDivisorTest {
 
     @Test
     fun finder_test() {
-        val commonDivisor = CommonDivisor()
-        val result = commonDivisor.findDivisor(29, 3)
+        val result = findDivisor(29, 3)
 
         assertEquals(result, 1)
     }
