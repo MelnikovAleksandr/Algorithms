@@ -1,4 +1,4 @@
-package bubble_sort
+package sorts
 
 import org.junit.Test
 import org.junit.jupiter.api.Assertions

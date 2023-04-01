@@ -1,4 +1,4 @@
-package bubble_sort
+package sorts
 
 /**
  * An array of integers is given.

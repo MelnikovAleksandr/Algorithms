@@ -1,5 +1,6 @@
 package factorial
 
+import factorial.factorial
 import org.junit.Assert.*
 import org.junit.Test
 
