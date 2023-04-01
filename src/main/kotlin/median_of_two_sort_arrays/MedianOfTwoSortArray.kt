@@ -2,6 +2,12 @@ package median_of_two_sort_arrays
 
 import java.lang.Integer.min
 
+/**
+ * Given two sorted arrays nums1 and nums2 of size m and n respectively,
+ * return the median of the two sorted arrays.
+ * The overall run time complexity should be O(log (m+n)).
+ */
+
 fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
     val m = nums1.size
     val n = nums2.size

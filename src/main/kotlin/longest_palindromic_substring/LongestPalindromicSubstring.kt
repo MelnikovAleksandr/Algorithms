@@ -43,3 +43,30 @@ fun longestPalindrome(s: String): String {
 
     return s.substring(start, end + 1)
 }
+
+fun longestPalindrome2(s: String): String {
+    if (s.length < 2) return s
+    val n = s.length
+    var start = 0
+    var maxLength = 1
+    var i = 0
+    while (i < n) {
+        if (n - i <= maxLength / 2) break
+        var j = i
+        var k = i
+        while (k < n - 1 && s[k + 1] == s[k]) k++
+        i = k + 1
+        while (k < n - 1 && j > 0 && s[k + 1] == s[j - 1]) {
+            k++
+            j--
+        }
+        val newLength = k - j + 1
+        if (newLength > maxLength) {
+            maxLength = newLength
+            start = j
+        }
+    }
+    return s.substring(start, start + maxLength)
+}
+
+

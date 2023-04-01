@@ -11,5 +11,10 @@ class LongestPalindromicSubstringKtTest {
         val result = longestPalindrome(str)
         assertEquals(result, "TENET")
     }
-
+    @Test
+    fun longest_palindrome_test2() {
+        val str = "TENET OPERA"
+        val result = longestPalindrome2(str)
+        assertEquals(result, "TENET")
+    }
 }
